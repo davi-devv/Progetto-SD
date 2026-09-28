@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/login.js"></script>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="login-window">
+                    <div class="container text h20">
+                        <h1>Login</h1>
+                    </div>
+                    <div class="container h60">
+                        <div>
+                            <label for="input-CF">Codice Fiscale: </label>
+                            <input name="CF" id="input-CF" type="text" placeholder="Codice Fiscale">
+                        </div>
+                    </div>
+                    <div class="container button" id="submit-button">
+                        Submit
+                    </div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

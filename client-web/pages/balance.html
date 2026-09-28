@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/balance.js"></script>
+    <link rel="stylesheet" href="../css/balance.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="balance-window">
+                    <div class="container text h20">
+                        <h2>Bilancio</h2>
+                    </div>
+                    <div class="container h40">
+                        <div class="container column h20">
+                            <div>Bilancio rimanente: <span id="balance">200</span> </div>
+                            <div>Ammontare buoni creati ma non spesi: <span id="not-spent">200</span></div>
+                            <div>Ammontare buoni spesi: <span id="spent">100</span></div>
+                        </div>
+                    </div>
+                    <div class="container h40">
+                        <div id="bar">
+                            <div id="balance-bar"></div>
+                            <div id="not-spent-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

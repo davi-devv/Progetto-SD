@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/user.js"></script>
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="user-window" class="container">
+                    <div class="container button available" id="exit-button">Logout</div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

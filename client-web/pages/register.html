@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/register.js"></script>
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="register-window">
+                    <div class="container text h20">
+                        <h1>Registrati</h1>
+                    </div>
+                    <div class="container text h60">
+                        <div class="container h40">
+                            <div>
+                                <label for="input-nome">Nome: </label>
+                                <input name="nome" id="input-nome" type="text" placeholder="Nome">
+                            </div>
+
+                            <div>
+                                <label for="input-cognome">Cognome: </label>
+                                <input name="cognome" id="input-cognome" type="text" placeholder="Cognome">
+                            </div>
+                        </div>
+                        <div class="container h40">
+                            <div>
+                                <label for="input-email">E-mail: </label>
+                                <input name="email" id="input-email" type="text" placeholder="E-mail">
+                            </div>
+
+                            <div>
+                                <label for="input-CF">Codice Fiscale: </label>
+                                <input name="CF" id="input-CF" type="text" placeholder="Codice Fiscale">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container h20">
+                        <div class="container button" id="submit-button">
+                            Submit
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

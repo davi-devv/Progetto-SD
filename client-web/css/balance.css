@@ -1,0 +1,47 @@
+/* Ids */
+:root {
+    --progress-bar-bg: #a16565;
+    --balance-bar: #91a292;
+    --not-spent-bar: #c2b275;
+}
+
+#balance-window {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    box-shadow: 0 0 10px grey;
+    background-color: var(--navbar-color);
+    border: 2px solid var(--highlight);
+}
+
+#bar {
+    display: flex;
+    width: 100%;
+    background-color: var(--progress-bar-bg);
+    border: 2px solid var(--highlight);
+    margin: 0 50px;
+    height: 40px;
+}
+
+#balance-bar {
+    background-color: var(--balance-bar);
+    height: 40px;
+}
+
+#not-spent-bar {
+    background-color: var(--not-spent-bar);
+    height: 40px;
+}
+
+#balance {
+    color: var(--balance-bar);
+}
+
+#not-spent {
+    color: var(--not-spent-bar);
+}
+
+#spent {
+    color: var(--progress-bar-bg);
+}

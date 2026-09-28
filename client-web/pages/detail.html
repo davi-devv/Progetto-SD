@@ -1,0 +1,55 @@
+<!-- Utilizzata per visualizzare un buono in dettaglio -->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/detail.js"></script>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="detail-window">
+                    <h1>ID buono: <span id="id"></span></h1>
+                    <div>Valore: <span id="value"></span></div>
+                    <div>Tipo: <span id="type"></span></div>
+                    <div>Stato: <span id="status"></span></div>
+                    <div>Data creazione: <span id="creation-date"></span></div>
+                    <div>Data ultima modifica: <span id="modified-date"></span></div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

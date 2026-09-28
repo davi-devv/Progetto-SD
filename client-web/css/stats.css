@@ -1,0 +1,38 @@
+/* Root */
+:root {
+    --stats: #91a292;
+    --opaque: #00000018
+}
+
+#stats-window {
+    width: 100%;
+    background-color: var(--navbar-color);
+    padding: 30px;
+    box-shadow: 0px 0px 10px gray;
+    border: 2px solid var(--highlight);
+}
+
+#stats-window h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+#stats-window div {
+    font-size: 15px;
+    color: #444;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--opaque);
+    display: flex;
+    justify-content: space-between;
+}
+
+#stats-window div:last-child {
+    border-bottom: none;
+}
+
+#stats-window span {
+    font-weight: bold;
+    color: var(--stats);
+}

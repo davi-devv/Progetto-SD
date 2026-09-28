@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/stats.js"></script>
+    <link rel="stylesheet" href="../css/stats.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div class="container w60">
+                <div id="stats-window">
+                    <h1>Statistiche Sistema</h1>
+                    <div>Totale utenti: <span id="total-users"></span></div>
+                    <div>Contributi Disponibili: <span id="contributi-disponibili"></span></div>
+                    <div>Ammontare buoni non spesi: <span id="non-ancora-spesi"></span></div>
+                    <div>Ammontare buoni spesi: <span id="spesi"></span></div>
+                    <div>Buoni Generati non Consumati: <span id="buoni-generati-consumati"></span></div>
+                    <div>Buoni Generati Consumati: <span id="buoni-generati-non-consumati"></span></div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

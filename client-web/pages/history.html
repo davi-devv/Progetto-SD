@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/history.js"></script>
+    <link rel="stylesheet" href="../css/history.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w10"></div>
+            <div id="central-container" class="container w80">
+                <div id="history-window">
+                    <div class="first table-item">
+                        <div class="item">ID</div>
+                        <div class="item">Tipo</div>
+                        <div class="item">Valore</div>
+                        <div class="item">Consumato</div>
+                        <div class="item">Creazione</div>
+                        <div class="item">Ultima Modifica</div>
+                    </div>
+
+                    <div id="table">
+                    </div>
+                </div>
+                <div id="button-holder">
+                    <div id="consume-button" class="button container">Consuma</div>
+                    <div id="mod-button" class="button container">Modifica</div>
+                    <div id="delete-button" class="button container">Cancella</div>
+                    <div id="detail-button" class="button container">Visualizza</div> 
+                </div>
+            </div>
+            <div class="container w10"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

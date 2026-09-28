@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Example page</title>
+    <script type="module" src="../js/new.js"></script>
+    <link rel="stylesheet" href="../css/new.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<!-- "Preload" prevents transitions from firing on page load-->
+
+<body class="preload">
+    <div id="main-container">
+
+        <!-- Navbar -->
+        <div class="nav-list">
+            <div class="nav-item" id="home-button">Home</div>
+            <div class="nav-item dropdown-button">
+                <ul class="dropdown-list">
+                    <li id="new-button">Nuovo Buono</li>
+                    <li id="history-button">Cronologia</li>
+                </ul>
+                Buoni
+            </div>
+
+            <div class="nav-item" id="stats-button">Statistiche</div>
+            <div class="nav-item" id="register-button">Registrati</div>
+            <div class="nav-item" id="login-button">
+                <div class="container column" id="login-content"></div>
+            </div>
+        </div>
+        <!-- /Navbar -->
+
+        <!-- Content -->
+        <div id="content" class="container">
+            <div class="container w30"></div>
+            <div id="central-container" class="container">
+                <div id="modify-window">
+                    <div class="container">
+                        <h2>Nuovo Buono</h2>
+                    </div>
+                    
+                    <div class="container">
+                        <div>
+                            <label for="value-input">Valore</label>
+                            <input id="value-input" type="number" min="0" max="500" step="0.01" placeholder="Inserisci Valore">
+                        </div>
+
+                        <div>
+                            <label for="type-text">Tipo</label>
+                            <select id="type">
+                                <option value="0">Cinema</option>
+                                <option value="1">Musica</option>
+                                <option value="2">Concerti</option>
+                                <option value="3">Eventi Culturali</option>
+                                <option value="4">Libri</option>
+                                <option value="5">Musei</option>
+                                <option value="6">Strumenti Musicali</option>
+                                <option value="7">Teatro</option>
+                                <option value="7">Danza</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div id="button-holder">
+                    <div id="modify-button" class="button container">Crea</div>
+                </div>
+            </div>
+            <div class="container w30"></div>
+        </div>
+        <!-- /Content -->
+    </div>
+</body>
+
+</html>

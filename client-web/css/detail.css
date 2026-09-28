@@ -1,0 +1,39 @@
+/* Ids */
+/* Root */
+:root {
+    --stats: #91a292;
+    --opaque: #00000018;
+}
+
+#detail-window {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px gray;
+    border: 2px solid var(--highlight);
+}
+
+#detail-window h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+
+#detail-window div {
+    font-size: 15px;
+    color: #444;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--opaque);
+    display: flex;
+    justify-content: space-between;
+}
+
+#detail-window div:last-child {
+    border-bottom: none;
+}
+
+#detail-window span {
+    font-weight: bold;
+    color: var(--stats);
+}
